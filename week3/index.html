@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container forms">
+        <div class="form login">
+            <div class="form-content" >
+                <header>Login</header>
+
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Enter Email" class="email">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Enter password" class="password ">
+                    </div>
+
+                    <div class="field button-field">
+                        <a href="home.html">
+                            <button>Login</button>
+                        </a>
+                    </div>
+                    <div class="form-link">
+                        <span>Have an account already? <a class="sign-up" href="register.html" ><button>Sign up</button> </a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const password = 'password';
+        const email = 'akoguitar@gmail.com';
+
+        const emailInput = document.querySelector('.email');
+        const passwordInput = document.querySelector('.password');
+        const loginButton = document.querySelector('.login')
+
+        loginButton.addEventListener('click', function(){
+
+            event.preventDefault();
+            window.location.href = 'home.html'
+
+            console.log(passwordInput);
+            return;
+
+            if(passwordInput.value == password && email == emailInput.value){
+                window.location.href = "http://www.google.com"
+            }
+
+        });
+    </script>
+</body>
+</html>

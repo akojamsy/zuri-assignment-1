@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00e9c6;
+}
+.container-register{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00e9c6;
+}
+
+.form{
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.form-register{
+    margin: 50px 0px;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: #fff;
+}
+
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+
+form .field{
+    height: 45px;
+    width: 100%;
+    margin-top: 25px;
+}
+.field a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+button{
+    background: #047867;
+    transition: 400ms;
+}
+
+button:hover{
+    background: #036456;
+    cursor: pointer;
+}
+
+.field input, .field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.field input{
+    padding: 0 15px;
+    border: 1px solid #cacaca;
+}
+
+select{
+    padding: 13px 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid #cacaca;
+    color: #333;
+    font-size: 16px;
+    width: 100%;
+}
+
+input::placeholder{
+    color: #ccc;
+}
+
+.date{
+    color:#333;
+}
+
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-link span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+
+.form-link a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #0171d3;
+}
+
+
+.form-link span a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 760px) {
+    .form{
+        width: 85%;
+    }
+}
+
