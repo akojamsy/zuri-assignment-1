@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
 
 function loginUser($email, $password)
 {
-    $file = fopen('users.csv', 'ra+');
+    $file = fopen('../storage/users.csv', 'ra+');
     if ($file) {
         while ($row = fgetcsv($file)) {
             $error = [];
