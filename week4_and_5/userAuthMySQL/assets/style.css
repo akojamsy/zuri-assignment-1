@@ -22,3 +22,9 @@ li{
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.btn{
+    border: 1px solid #ccc;
+    background-color: #fcfc;
+    color:#333;
+}
